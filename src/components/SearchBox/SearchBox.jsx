@@ -1,9 +1,14 @@
 import "./SearchBox.scss";
 
 
-const SearchBox = () => {
+const SearchBox = ({handleInput}) => {
   return (
-    <div>SearchBox</div>
+
+<div>
+    <label htmlFor="input">NPC search...</label>
+    <input onInput={handleInput} type="text" class="input" placeholder="NPC search..." />
+</div>
+
   )
 }
 

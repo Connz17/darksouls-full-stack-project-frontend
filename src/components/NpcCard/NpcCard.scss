@@ -1,0 +1,42 @@
+
+
+.card {
+    border: 2px solid purple;
+    height: 17rem;
+    width: 10rem;
+
+    &__link{
+        //text-decoration: none;
+    }
+
+    &__heading{
+        font-size: small;
+        //text-decoration: none;
+    }
+
+    &__image{
+        margin: auto;
+        border: 1px solid black;
+        width: 80%;
+        height: auto;
+
+        &--pic{
+            width: 100%;
+            height: auto;
+        }
+    }
+
+
+    &__location{
+        font-size: small;
+    }
+
+    &__quest{
+        font-style: italic;
+    }
+
+    &__info{
+        font-size: small;
+    }
+
+}
