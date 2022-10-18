@@ -1,0 +1,31 @@
+.welcome {
+    background-color: rgba(0, 0, 0, );
+    position: fixed;
+    top: 0rem;
+    left: 0rem;
+    right: 0rem;
+    bottom: 0rem;
+    z-index: 1;
+
+    &__image{
+        max-width: 100%;
+        height: auto;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    &__message{
+        color: whitesmoke;
+        font-style: italic;
+        margin: 2rem;
+    }
+
+    &__button{
+        cursor: pointer;
+        padding: 0.3rem;
+        border-radius: 0.5rem;
+        color: whitesmoke;
+        background-color: #cd8760;
+    }
+
+}
