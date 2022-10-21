@@ -1,18 +1,25 @@
 import "./NPCPage.scss";
-//import { useParams } from "react-router";
+import { useParams } from "react-router";
 
 
-const NPCPage = () => {
+const NPCPage = ({characterInfo}) => {
 
-// const {beerId} = useParams();
-// console.log(beerId);
+const {Id} = useParams();
 
-// const clickedBeer = beers.filter((beer) => beer.id == beerId)
+const selectedNPC = characterInfo.filter((character) => character.id == Id)
   
-// console.log(clickedBeer[0].id);
+
 
   return (
-    <div>NPCPage</div>
+    <>
+    <div>
+      <img src={selectedNPC[0].img} alt="" />
+    </div>
+    <h2>{selectedNPC[0].name}</h2>
+    <h3>{selectedNPC[0].location}</h3>
+    <h3>{selectedNPC[0].questline}</h3>
+    <h3>{selectedNPC[0].covenant}</h3>
+    </>
   )
 }
 

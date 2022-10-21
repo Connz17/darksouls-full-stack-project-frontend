@@ -2,8 +2,8 @@
 
 .card {
     border: 2px solid purple;
-    height: 17rem;
-    width: 10rem;
+    height: 22rem;
+    width: 11rem;
 
     &__link{
         //text-decoration: none;
@@ -23,6 +23,7 @@
         &--pic{
             width: 100%;
             height: auto;
+            border-radius: 1.5rem;
         }
     }
 

@@ -1,5 +1,6 @@
 .welcome {
-    background-color: rgba(0, 0, 0, );
+    background: rgb(136,8,8);
+    background: linear-gradient(0deg, rgba(136,8,8,1) 10%, rgba(0,0,0,1) 20%);
     position: fixed;
     top: 0rem;
     left: 0rem;
@@ -10,8 +11,13 @@
     &__image{
         max-width: 100%;
         height: auto;
-        margin-top: 3rem;
-        margin-bottom: 3rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    &__icon{
+        max-width: 10%;
+        height: auto;
     }
 
     &__message{
@@ -27,5 +33,9 @@
         color: whitesmoke;
         background-color: #cd8760;
     }
+
+.welcome__button:hover{
+    background-color: #bb0a1e;
+}    
 
 }
