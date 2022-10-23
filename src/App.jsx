@@ -47,9 +47,7 @@ function App() {
     <div className="App">
       <header>
       </header>
-      <Link to="/locations">
       <Nav/>
-      </Link>
         <Routes>
           <Route path="/characters"
             element={<Main characterInfo={NPCinfo} />}>
