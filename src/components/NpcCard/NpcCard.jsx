@@ -13,7 +13,7 @@ const NpcCard = ({image, name, location, covenant, quest, status, character}) =>
             <img className="card__image--pic" src={image} alt="NPC"/>
         </div>
         </Link><br />         
-        <h4 className="card__location">{location}</h4>
+        <Link style={{ textDecoration: "none" }}  className="card__location" to={`/locations/${character.location}`}>{location}</Link><br /> 
         <br />
         <h5 className="card__info">{status}</h5>
     </div>

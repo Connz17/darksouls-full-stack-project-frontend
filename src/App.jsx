@@ -23,7 +23,7 @@ function App() {
     {   
     id:2,
     img: templateImage,  
-    name: "Anor Londo",
+    name: "Solaire",
     //Role:?
     location: "Anor Londo",
     covenant: "Affiliation",
@@ -33,7 +33,7 @@ function App() {
     {
     id:3,
     img: templateImage,  
-    name: "Undead Parish",
+    name: "Andre",
     //Role:?
     location: "Undead Parish",
     covenant: "Affiliation",
