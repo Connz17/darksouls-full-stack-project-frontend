@@ -7,6 +7,7 @@ import NPCPage from './containers/NPCPage/NPCPage';
 import WelcomePage from './components/WelcomePage/WelcomePage';
 import Locations from './containers/Locations/Locations';
 import SingleLocationPage from './containers/SingleLocationPage/SingleLocationPage';
+import CreateCharacter from './containers/CreateCharacter/CreateCharacter';
 
 function App() {
 
@@ -54,6 +55,9 @@ function App() {
           </Route>
           <Route path="/locations"
             element={<Locations characterInfo={NPCinfo} />}>
+          </Route>
+          <Route path="/characters/add"
+            element={<CreateCharacter characterInfo={NPCinfo} />}>
           </Route>
           <Route path="/characters/:Id"
             element={<NPCPage characterInfo={NPCinfo} />}>

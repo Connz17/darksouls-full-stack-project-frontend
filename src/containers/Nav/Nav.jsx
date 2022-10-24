@@ -7,20 +7,22 @@ const Nav = () => {
   return (
     <div className="navigation-bar">
       <Link to="/characters">
-        <img className="navigation-bar__home" src={home} alt="return home" />
+        <div className="navigation-bar__box"> 
+          <img className="navigation-bar__box--img" src={home} alt="return home" />
+        </div>
       </Link>
-      <Link to="/locations">
-        <div>
+      <Link  to="/locations">
+        <div className="navigation-bar__box">
           <h3>Locations</h3>
         </div>
       </Link>
-      <Link to="*">
-        <div>
+      <Link to="/characters/add">
+        <div className="navigation-bar__box" >
           <h3>Add NPC</h3>
         </div>
       </Link>
-      <Link to="*">
-        <div>
+      <Link to="/">
+        <div  className="navigation-bar__box">
           <h3>...</h3>
         </div>
       </Link>

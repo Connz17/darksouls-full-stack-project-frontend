@@ -3,9 +3,16 @@
     justify-content: space-around;
     align-items: center;
 
-
-    &__home{
+    &__box{
         width:4rem;
         height: auto;
+
+        &--img{
+            width:100%;
+            height: auto;
     }
+
+    }
+
+
 }
