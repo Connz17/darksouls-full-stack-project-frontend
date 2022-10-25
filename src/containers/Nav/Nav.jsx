@@ -1,29 +1,30 @@
 import "./Nav.scss";
 import home from "../../assets/images/dark-souls-dark-sign.png";
+import start from "../../assets/images/HomewardBone.png";
 import { Link } from "react-router-dom";
 
 
 const Nav = () => {
   return (
     <div className="navigation-bar">
-      <Link to="/characters">
+      <Link style={{ textDecoration: "none" }} to="/characters">
         <div className="navigation-bar__box"> 
-          <img className="navigation-bar__box--img" src={home} alt="return home" />
+          <img className="navigation-bar__box--img" src={start} alt="return home" />
         </div>
       </Link>
-      <Link  to="/locations">
+      <Link style={{ textDecoration: "none" }} to="/locations">
         <div className="navigation-bar__box">
           <h3>Locations</h3>
         </div>
       </Link>
-      <Link to="/characters/add">
+      <Link style={{ textDecoration: "none" }} to="/characters/add">
         <div className="navigation-bar__box" >
           <h3>Add NPC</h3>
         </div>
       </Link>
-      <Link to="/">
+      <Link style={{ textDecoration: "none" }} to="/">
         <div  className="navigation-bar__box">
-          <h3>...</h3>
+        <img className="navigation-bar__box--img" src={home} alt="return home" />
         </div>
       </Link>
     </div>

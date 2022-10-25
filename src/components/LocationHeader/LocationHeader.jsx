@@ -6,10 +6,12 @@ import { Link } from "react-router-dom";
 const LocationHeader = ({ character, location}) => {
 
   return (
+    <> <br />
     <Link style={{ textDecoration: "none" }} to={`/locations/${character.location}`} className="location-banner">
-        <h2 className="location-banner__title">{location}</h2>
-        <img className="location-banner__img" src={locationImg} alt="" />
+        <h3 className="location-banner__title">{location}</h3>
+        {/* <img className="location-banner__img" src={locationImg} alt="" /> */}
     </Link>
+    </> 
   )
 }
 

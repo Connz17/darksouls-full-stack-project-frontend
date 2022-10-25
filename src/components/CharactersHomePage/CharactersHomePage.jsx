@@ -3,16 +3,21 @@ import SearchBox from "../SearchBox/SearchBox";
 import "./CharactersHomePage.scss";
 
 
+
 const CharactersHomePage = ({characterInfo}) => {
+
+  
+
+
   return (
-    <>
+    <section className="home">
         <div>
-            <SearchBox/>
+            <SearchBox/> <br />
         </div>
         <div>
             <CharacterCardList characterInfo={characterInfo}/>
         </div>
-    </>
+    </section>
   )
 }
 

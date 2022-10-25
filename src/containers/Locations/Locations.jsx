@@ -4,9 +4,9 @@ import "./Locations.scss";
 
 const Locations = ({characterInfo}) => {
   return (
-    <div>
+    <section className="locations">
         <LocationsList characterInfo={characterInfo}/>
-    </div>
+    </section>
   )
 }
 

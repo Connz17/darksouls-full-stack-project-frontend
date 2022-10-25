@@ -22,14 +22,14 @@ const SingleLocationPage = ({characterInfo}) => {
 
 
   return (
-    <>
-    <div>
-        <h1>{selectedLocation[0].location}</h1>
-    </div>
-    <div className="display">
-        {population}
-    </div>
-    </>
+    <section className="singlelocal">
+        <div>
+            <h1>{selectedLocation[0].location}</h1>
+        </div>
+        <div className="singlelocal__display">
+            {population}
+        </div>
+    </section>
   )
 }
 
