@@ -1,5 +1,5 @@
 import "./LocationHeader.scss";
-import locationImg from "../../assets/images/AnorLondo.jpg";
+import locationMarker from "../../assets/images/sun-bro.png";
 import { Link } from "react-router-dom";
 
 
@@ -7,9 +7,11 @@ const LocationHeader = ({ location }) => {
 
   return (
     <> <br />
-    <Link style={{ textDecoration: "none" }} to={`/locations/${location}`} className="location-banner">
-        <h3 className="location-banner__title">{location}</h3>
-        {/* <img className="location-banner__img" src={locationImg} alt="" /> */}
+    <Link style={{ textDecoration: "none" }} to={`/locations/${location}`} className="location">
+      <div className="location__banner">
+        <img className="location__banner-marker" src={locationMarker} alt="Marker" />
+        <h3 className="location__banner-title">{location}</h3>
+      </div>
     </Link>
     </> 
   )

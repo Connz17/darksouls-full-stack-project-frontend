@@ -13,8 +13,17 @@
     }
 
     &__image{
-        width: 10rem;
+        width: 15rem;
         height: auto;
+    }
+
+    &__quest-box{
+        display: flex;
+        align-items: center;
+    }
+
+    &__marker{
+        height: 3rem;
     }
 
     &__questline{
@@ -23,7 +32,11 @@
 
 
     &__buttons{
-        gap: 0.5rem;
+        width: 0.5rem;
+        width: 20.5rem;
+        display: flex;
+        justify-content: space-evenly;
+        margin: auto;
     }
 
 }

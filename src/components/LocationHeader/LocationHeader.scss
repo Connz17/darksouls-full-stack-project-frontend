@@ -1,7 +1,7 @@
 @use "../../styles/_typography.scss" as *;
 @use "../../styles/_variables.scss" as *;
 
-.location-banner {
+.location {
     height: 5rem;
     display: grid;
     // padding: 4rem;
@@ -13,20 +13,18 @@
     // background: rgb(255,215,0);
     // background: linear-gradient(180deg, rgba(255,215,0,1) 27%, rgba(212,175,55,1) 77%);
 
-    &__title{
+    &__banner{
         grid-area: c1;
         order: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
+        &-marker{
+            height: 4rem;
+        }
     }
 
-    &__img{
-        width: 100%;
-        height: 5rem;
-
-        grid-area: c1;
-    }
 }
 
-.location-banner__title::marker{
-    margin-left: 2rem;
-    background-image: url("../../assets/images/Estus_Flask_half.webp");
-}

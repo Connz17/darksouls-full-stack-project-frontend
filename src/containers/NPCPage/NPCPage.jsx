@@ -2,6 +2,8 @@ import "./NPCPage.scss";
 import { useParams, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Form from "../../components/Form/Form";
+import marker from "../../assets/images/Estus_Flask_full.webp";
+
 
 
 const NPCPage = ({templateImage}) => {
@@ -73,12 +75,15 @@ console.log(character);
       </div>
       <div>
         <h3 className="npc__location">{character.location}</h3>
-        <h4 className="npc__questline">{character.questline}</h4>
+        <div className="npc__quest-box">
+          <img className="npc__marker" src={marker} alt="" />
+          <h4 className="npc__questline">{character.questline}</h4>
+        </div>
       </div>
     </div>
 
     <div className="npc__buttons">
-      <button onClick={handleShowForm}>Update</button>
+      <button className="" onClick={handleShowForm}>Update</button>
       <button onClick={handleDelete}>Delete</button>
     </div>
     {showForm && <Form handleSubmit={handleUpdate} defaultFormState={character}/>}
