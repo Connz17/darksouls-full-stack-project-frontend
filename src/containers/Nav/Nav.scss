@@ -1,3 +1,6 @@
+@use "../../styles/_typography.scss" as *;
+@use "../../styles/_variables.scss" as *;
+
 .navigation-bar{
     height: 10vh;
     display: flex;

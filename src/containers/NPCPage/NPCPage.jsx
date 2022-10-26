@@ -4,71 +4,84 @@ import { useState, useEffect } from "react";
 import Form from "../../components/Form/Form";
 
 
-const NPCPage = ({characterInfo}) => {
+const NPCPage = ({templateImage}) => {
 
-const {Id} = useParams();
+const {id} = useParams();
 const navigate = useNavigate();
-const [greeting, setGreeting] = useState(null);
+const [character, setCharacter] = useState({});
 const [showForm, setShowForm] = useState(false);
 
-// const getGreetingById = async id => {
-//   const response = await fetch(`http://localhost:8080/greeting/${id}`);
-//     const greetingData = await response.json();
-//     setGreeting(greetingData);
-//   }
-//   ;
+const getCharacterById = async id => {
+  const response = await fetch(`http://localhost:8080/character/${id}`);
+    const characterData = await response.json();
+    setCharacter(characterData);
+  };
+  
+useEffect(() => {
+  getCharacterById(id);
+}, [id]);
 
-// useEffect(() => {
-//   getGreetingById(id);
-// }, [id]);
+if (character.imageUrl == "" || character.imageUrl == null)
+      character.imageUrl = templateImage;
 
 
-const selectedNPC = characterInfo.filter((character) => character.id == Id)
-
-// const handleUpdateGreeting = async updatedGreeting => {
-//   const response = await fetch(`http://localhost:8080/greeting/${id}`, {
-//     method: "PUT",
-//     headers: {
-//       Accept: "application/json",
-//       "Content-Type": "application/json; charset=utf8",
-//     },
-//     body: JSON.stringify(updatedGreeting),
-// })
-//     setGreeting(updatedGreeting);
-// };
+const handleUpdateCharacter = async updatedCharacter => {
+  const result = await fetch(`http://localhost:8080/character/${id}`, {
+    method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(updatedCharacter),
+    });
+    if (result.ok) {
+      alert("NPC updated");
+      setCharacter(updatedCharacter);
+    } else {
+      const message = await result.text();
+      alert(message);
+    }
+  };
   
 
 
-// const handleDeleteGreeting = async () => {
-//   const response = await fetch(`http://localhost:8080/greeting/${id}`, {
-//     method: "DELETE"
-// })
-// navigate("/")
-// };
+const handleDeleteGreeting = async () => {
+  const result = await fetch(`http://localhost:8080/greeting/${id}`, {
+    method: "DELETE"
+})
+if (result.ok) {
+  alert("NPC deleted");
+  navigate("/");
+} else {
+  const message = await result.text();
+  alert(message);
+}
+};
 
-// const handleShowForm = () => setShowForm(!showForm);
+const handleShowForm = () => setShowForm(!showForm);
+
+console.log(character);
 
   return (
     <section className="npc">
     <div className="npc__info">
       <div>
-        <h3 className="npc__name">{selectedNPC[0].name}</h3>
-        <h4 className="npc__covenant">{selectedNPC[0].covenant}</h4>
+        <h3 className="npc__name">{character.characterName}</h3>
+        <h4 className="npc__covenant">{character.covenant}</h4>
       </div>
       <div>
-        <img className="npc__image" src={selectedNPC[0].img} alt="" />
+        <img className="npc__image" src={character.imageUrl} alt="" />
       </div>
       <div>
-        <h3 className="npc__location">{selectedNPC[0].location}</h3>
-        <h4 className="npc__questline">{selectedNPC[0].questline}</h4>
+        <h3 className="npc__location">{character.location}</h3>
+        <h4 className="npc__questline">{character.questline}</h4>
       </div>
     </div>
 
     <div className="npc__buttons">
-      <button>Update</button>
-      <button>Delete</button>
+      <button onClick={handleShowForm}>Update</button>
+      <button onClick={handleDelete}>Delete</button>
     </div>
-    {/* {showForm && <Form/>} */}
+    {showForm && <Form handleSubmit={handleUpdate} defaultFormState={character}/>}
     </section>
   )
 }

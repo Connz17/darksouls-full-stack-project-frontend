@@ -1,36 +1,50 @@
 import "./SingleLocationPage.scss";
 import { useParams } from "react-router";
+import { useState, useEffect } from "react";
 import NpcCard from "../../components/NpcCard/NpcCard";
 
 
-const SingleLocationPage = ({characterInfo}) => {
 
+const SingleLocationPage = ({templateImage}) => {
+    const [characters, setCharacters] = useState([]);
     const {location} = useParams();
+    const getCharactersByLocation = async location => {
+    const response = await fetch(`http://localhost:8080/characters/?location=${location}`);
+    const characterData = await response.json();
+    setCharacters(characterData);
+    characterData.forEach((character) => {
+        if (character.imageUrl == "" || character.imageUrl == null)
+        character.imageUrl = templateImage;
+        })
+    };
 
-    const selectedLocation = characterInfo.filter((character) => character.location == location)
+useEffect(() => {
+    getCharactersByLocation(location);
+}, [location]);
 
-    const population = characterInfo.map((character) =>{
-       if (character.location == selectedLocation[0].location) 
-        return(
-            <div key={character.id}>
-                <NpcCard character={character} image={character.img} name={character.name} location={character.location} covenant={character.covenant} quest={character.questline} status={character.status}/>
-            </div>
-        )
+
+    const population = characters.map((character) => {
+        if (character.location == location) 
+            return(
+                <div key={character.id}>
+                    <NpcCard character={character} image={character.imageUrl} name={character.characterName} location={character.location} covenant={character.covenant} quest={character.questline} status={character.status}/>
+                </div>
+            )
     })
 
-    console.log(selectedLocation[0]);
+    //console.log(selectedLocation[0]);
 
 
-  return (
+return (
     <section className="singlelocal">
         <div>
-            <h1>{selectedLocation[0].location}</h1>
+            <h1>{location}</h1>
         </div>
         <div className="singlelocal__display">
             {population}
         </div>
     </section>
-  )
+    )
 }
 
 export default SingleLocationPage

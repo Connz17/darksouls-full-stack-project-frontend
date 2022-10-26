@@ -2,12 +2,12 @@ import LocationHeader from "../LocationHeader/LocationHeader";
 import "./LocationsList.scss";
 
 
-const LocationsList = ({characterInfo}) => {
+const LocationsList = ({locationInfo}) => {
 
-    const locationJSX = characterInfo.map((character)=> {
+    const locationJSX = locationInfo.map((location)=> {
         return(
-            <div key={character.location}>
-                <LocationHeader character={character} location={character.location} />
+            <div key={location}>
+                <LocationHeader location={location} />
             </div>
         )
     })

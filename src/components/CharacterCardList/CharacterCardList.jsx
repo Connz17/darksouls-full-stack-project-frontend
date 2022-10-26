@@ -7,7 +7,7 @@ const CharacterCardList = ({characterInfo}) => {
     const npcJSX = characterInfo.map((character)=> {
         return(
             <div key={character.id}>
-                <NpcCard character={character} image={character.img} name={character.name} location={character.location} covenant={character.covenant} quest={character.questline} status={character.status}/>
+                <NpcCard character={character} image={character.imageUrl} name={character.characterName} location={character.location} covenant={character.covenant} quest={character.questline} status={character.status}/>
             </div>
         )
     })
