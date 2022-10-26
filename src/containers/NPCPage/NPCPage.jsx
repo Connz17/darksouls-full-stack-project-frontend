@@ -45,7 +45,7 @@ const handleUpdate = async updatedCharacter => {
 
 
 const handleDelete = async () => {
-  const result = await fetch(`http://localhost:8080/greeting/${id}`, {
+  const result = await fetch(`http://localhost:8080/character/${id}`, {
     method: "DELETE"
 })
 if (result.ok) {
