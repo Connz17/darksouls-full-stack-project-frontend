@@ -25,7 +25,7 @@ if (character.imageUrl == "" || character.imageUrl == null)
       character.imageUrl = templateImage;
 
 
-const handleUpdateCharacter = async updatedCharacter => {
+const handleUpdate = async updatedCharacter => {
   const result = await fetch(`http://localhost:8080/character/${id}`, {
     method: "PUT",
       headers: {
@@ -44,7 +44,7 @@ const handleUpdateCharacter = async updatedCharacter => {
   
 
 
-const handleDeleteGreeting = async () => {
+const handleDelete = async () => {
   const result = await fetch(`http://localhost:8080/greeting/${id}`, {
     method: "DELETE"
 })
