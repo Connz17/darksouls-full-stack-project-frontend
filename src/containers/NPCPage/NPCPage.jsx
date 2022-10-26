@@ -50,7 +50,7 @@ const handleDelete = async () => {
 })
 if (result.ok) {
   alert("NPC deleted");
-  navigate("/");
+  navigate("/characters");
 } else {
   const message = await result.text();
   alert(message);
