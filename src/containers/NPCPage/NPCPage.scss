@@ -31,12 +31,21 @@
     }
 
 
-    &__buttons{
+    &__buttons-box{
         width: 0.5rem;
         width: 20.5rem;
         display: flex;
         justify-content: space-evenly;
         margin: auto;
+    }
+
+    &__button{
+        cursor: pointer;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        color: whitesmoke;
+        font-size: x-large;
+        background-color: #cd8760;
     }
 
 }

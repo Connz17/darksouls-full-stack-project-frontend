@@ -82,9 +82,9 @@ console.log(character);
       </div>
     </div>
 
-    <div className="npc__buttons">
-      <button className="" onClick={handleShowForm}>Update</button>
-      <button onClick={handleDelete}>Delete</button>
+    <div className="npc__buttons-box">
+      <button className="npc__button" onClick={handleShowForm}>Update</button>
+      <button className="npc__button" onClick={handleDelete}>Delete</button>
     </div>
     {showForm && <Form handleSubmit={handleUpdate} defaultFormState={character}/>}
     </section>

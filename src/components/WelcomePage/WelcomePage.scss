@@ -2,8 +2,8 @@
 @use "../../styles/_variables.scss" as *;
 
 .welcome {
-    background: rgb(136,8,8);
-    background: linear-gradient(0deg, rgba(136,8,8,1) 10%, rgba(0,0,0,1) 20%);
+    // background: #880808;
+    background: linear-gradient(0deg, rgba($red-blood,1) 10%, rgba(0,0,0,1) 20%);
     position: fixed;
     top: 0rem;
     left: 0rem;
@@ -35,11 +35,11 @@
         border-radius: 0.5rem;
         color: whitesmoke;
         font-size: x-large;
-        background-color: #cd8760;
+        background-color: $brown;
     }
 
 .welcome__button:hover{
-    background-color: #bb0a1e;
+    background-color: $red-crimson;
 }    
 
 }

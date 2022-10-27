@@ -14,12 +14,12 @@ const Nav = () => {
       </Link>
       <Link style={{ textDecoration: "none" }} to="/locations">
         <div className="navigation-bar__box">
-          <h3>Locations</h3>
+          <h3 className="navigation-bar__title">Locations</h3>
         </div>
       </Link>
       <Link style={{ textDecoration: "none" }} to="/characters/add">
         <div className="navigation-bar__box" >
-          <h3>Add NPC</h3>
+          <h3 className="navigation-bar__title">Add NPC</h3>
         </div>
       </Link>
       <Link style={{ textDecoration: "none" }} to="/">
