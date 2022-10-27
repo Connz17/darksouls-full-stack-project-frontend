@@ -36,9 +36,9 @@ useEffect(() => {
 
 return (
     <section className="single-local">
-        <div>
-            <h1>{location}</h1>
-        </div>
+        <div> <br />
+            <h1 className="single-local__title">{location}</h1>
+        </div><br />
         <div className="single-local__display">
             {population}
         </div>

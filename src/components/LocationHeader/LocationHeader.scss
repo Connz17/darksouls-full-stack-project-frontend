@@ -4,14 +4,12 @@
 .location {
     height: 5rem;
     display: grid;
-    // padding: 4rem;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: 
     "c1"  
     ;
-    // background: rgb(255,215,0);
-    // background: linear-gradient(180deg, rgba(255,215,0,1) 27%, rgba(212,175,55,1) 77%);
+   
 
     &__banner{
         grid-area: c1;
@@ -23,6 +21,11 @@
 
         &-marker{
             height: 4rem;
+        }
+
+        &-title{
+            font-size: 1.7rem;
+            color: $gold-secondary;
         }
     }
 
