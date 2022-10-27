@@ -6,4 +6,8 @@
     width: 100vw;
     background: linear-gradient(180deg, $red-crimson 20%, $grey-dark 70%, $black-light 90%);
     
+    &__title{
+        font-size: 2rem;
+        color: $gold-secondary;
+    }
 }

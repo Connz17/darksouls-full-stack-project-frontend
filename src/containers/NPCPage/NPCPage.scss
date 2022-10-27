@@ -2,24 +2,45 @@
 @use "../../styles/_variables.scss" as *;
 
 
+
 .npc{
     min-height: 90vh;
     width: 100vw;
     background: linear-gradient(180deg, $red-crimson 20%, $grey-dark 70%, $black-light 90%);
 
-    &__info{
+    &__page{
         display: flex;
         justify-content: space-evenly;
     }
 
+    &__info{
+        background-color:rgba($silver-dark, 0.5);
+        height: fit-content;
+        width: 33%;
+        
+    }
+
+    &__name{
+        font-size: 1.5rem;
+    }
+
+   &__covenant{
+    font-size: 1rem;
+   }
+
     &__image{
         width: 15rem;
         height: auto;
+    } 
+    
+    &__location{
+        font-size: 1.5rem;
     }
 
     &__quest-box{
         display: flex;
         align-items: center;
+        justify-content: center;
     }
 
     &__marker{
@@ -28,6 +49,8 @@
 
     &__questline{
         font-family: $font-alternate;
+        color: $gold-primary;
+        font-size: 1rem;
     }
 
 

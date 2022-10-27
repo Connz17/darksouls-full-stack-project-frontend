@@ -28,8 +28,8 @@ const CreateCharacter = () => {
     const defaultFormState = { characterName: "", imageUrl: "", location: "", covenant: "", questline: "", status: "" };
 
   return (
-    <section className="create">
-        <h2>Add a new NPC</h2> <br />
+    <section className="create"><br />
+        <h2 className="create__title">Add a new NPC</h2> <br />
         <Form defaultFormState={defaultFormState} handleSubmit={handleSubmit}/>
     </section>
   )

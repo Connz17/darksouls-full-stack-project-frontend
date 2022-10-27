@@ -7,10 +7,13 @@
     display: flex;
     flex-direction: column;
     align-items:center;
-
     gap: 1rem;
 
+    &__input{
+    width: 19rem;
+    height: 3rem;
+    border-radius: 2rem;
+    text-indent: 1rem;
+    }
 
-
-   
 }

@@ -64,19 +64,19 @@ const handleShowForm = () => setShowForm(!showForm);
 console.log(character);
 
   return (
-    <section className="npc">
-    <div className="npc__info">
-      <div>
-        <h3 className="npc__name">{character.characterName}</h3>
+    <section className="npc"> <br />
+    <div className="npc__page">
+      <div className="npc__info">
+        <h3 className="npc__name">{character.characterName}</h3><br />
         <h4 className="npc__covenant">{character.covenant}</h4>
       </div>
       <div>
-        <img className="npc__image" src={character.imageUrl} alt="" />
+        <img className="npc__image" src={character.imageUrl} alt="character" />
       </div>
-      <div>
-        <h3 className="npc__location">{character.location}</h3>
+      <div className="npc__info">
+        <h3 className="npc__location">{character.location}</h3> <br />
         <div className="npc__quest-box">
-          <img className="npc__marker" src={marker} alt="" />
+          <img className="npc__marker" src={marker} alt="quest marker" />
           <h4 className="npc__questline">{character.questline}</h4>
         </div>
       </div>
@@ -85,7 +85,7 @@ console.log(character);
     <div className="npc__buttons-box">
       <button className="npc__button" onClick={handleShowForm}>Update</button>
       <button className="npc__button" onClick={handleDelete}>Delete</button>
-    </div>
+    </div><br />
     {showForm && <Form handleSubmit={handleUpdate} defaultFormState={character}/>}
     </section>
   )

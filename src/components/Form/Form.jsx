@@ -27,7 +27,7 @@ const Form = ({ defaultFormState, handleSubmit }) => {
               value={characters.questline} onInput={event => setCharacters({ ...characters, questline: event.target.value })}/>
             <input required className="creation__input" type="text" placeholder="Status"
             value={characters.status} onInput={event => setCharacters({ ...characters, status: event.target.value })}/>
-            <input required className="creation__input" type="image" src={picture} alt="Submit" width="50" height="50"/>
+            <input required className="creation__input--button" type="image" src={picture} alt="Submit" width="130" height="auto"/>
         </form>
     </div>
   )
