@@ -32,15 +32,14 @@ useEffect(() => {
             )
     })
 
-    //console.log(selectedLocation[0]);
 
 
 return (
-    <section className="singlelocal">
+    <section className="single-local">
         <div>
             <h1>{location}</h1>
         </div>
-        <div className="singlelocal__display">
+        <div className="single-local__display">
             {population}
         </div>
     </section>

@@ -4,11 +4,11 @@ import { Link } from "react-router-dom"
 
 
 
-const NpcCard = ({image, name, location, covenant, quest, status, character}) => {
+const NpcCard = ({image, name, location, status, character}) => {
   return (
     <div className="card">
         <Link style={{ textDecoration: "none" }} className="card__link" to={`/characters/${character.id}`}>
-        <h2 className="card__heading">{name}</h2><br />
+        <h2 className="card__heading">{name}</h2>
         <div className="card__image">
             <img className="card__image--pic" src={image} alt="NPC"/>
         </div>

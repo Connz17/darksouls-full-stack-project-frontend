@@ -2,18 +2,15 @@
 @use "../../styles/_variables.scss" as *;
 
 .card {
-    border: 2px solid purple;
-    height: 21.5rem;
-    width: 11rem;
+    height: 26.5rem;
+    width: 15rem;
+    background-color: $silver-dark;
     border-radius: 0.7rem;
-
-    &__link{
-        //text-decoration: none;
-    }
+    box-shadow: 5px 7px 5px;
 
     &__heading{
-        font-size: small;
-        //text-decoration: none;
+        font-size: 1.5rem;
+        color: $gold-primary;
     }
 
     &__image{
@@ -25,20 +22,26 @@
             width: 100%;
             height: auto;
             border-radius: 1.5rem;
+            color: black;
+            opacity: 0.5;
+            transition: 0.3s;
         }
     }
 
 
     &__location{
-        font-size: small;
+        font-size: 1.2rem;
+        color: $gold-primary;
     }
 
-    &__quest{
-        font-style: italic;
-    }
 
     &__info{
-        font-size: small;
+        font-size: 1rem;
     }
 
+}
+
+.card__image--pic:hover{
+    opacity: 1;
+    box-shadow: 8px 10px 7px;
 }
