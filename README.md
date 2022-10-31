@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=200px height=200px src="./assets/images/bonfire.png" alt="Project logo"></a>
+ <img width=200px height=200px src="./src/assets/images/bonfire.png" alt="Project logo"></a>
 </p>
 
 <h3 align="center">Dark Souls NPC Tracker (front-end)</h3>
@@ -68,13 +68,6 @@ Using the site
 <img src="./src/assets/screenshots/npcPage.png"/>
 
 
-### Single beer information page
-
-<img src="./src/assets/images/Beer info.png"/>
-
-
-
-
 
 ### `Features of note`
 
@@ -82,10 +75,8 @@ Using the site
 
 The road-map for future features, fixes and developments are as follows:
  <ul>
-    <li>Add IBU to the sort by and filter options</li>
-    <li>Add a dropdown card list of beers coming from the search box onFocus that would contain all available beer selections and narrow that list down based on user input</li>
-    <li>Add the ability to search based on food parings and year brewed</li>
-    <li>Add more navigation features. i.e. a button on the single beer page that would take you back home. And an 'X' button to close the sort by options window.</li>
+    <li>...</li>
+    
   </ul>
 
 ## Available Scripts <a name="available_scripts"></a>
