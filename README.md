@@ -1,10 +1,96 @@
-# Getting Started with Create React App
+<p align="center">
+  <a href="" rel="noopener">
+ <img width=200px height=200px src="./assets/images/bonfire.png" alt="Project logo"></a>
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h3 align="center">Dark Souls NPC Tracker (front-end)</h3>
 
-## Available Scripts
 
-In the project directory, you can run:
+<p align= "center"> This is the front end to my full stack project.. 
+    <br> 
+</p>
+
+## 📝 Table of Contents
+
+- [Getting Started](#getting_started)
+- [Deployment](#deployment)
+- [Usage](#usage)
+- [Future Scope](#future_scope)
+- [Available Scripts](#available_scripts)
+- [Authors](#authors)
+
+
+## 🏁 Getting Started <a name = "getting_started"></a>
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
+
+Clone the repository down using bash or another terminal. Once cloned down to your local machine cd into the project folder and run the command npm install to install all the dependencies needed to work the project. 
+
+
+## 🔧 Running the tests <a name = "tests"></a>
+
+To run a test go to the specified components folder and open the test file. Open a new terminal and in that terminal run the command npm run test to run all the tests written in for that component.
+
+
+## 🚀 Deployment <a name = "deployment"></a>
+
+Add additional notes about how to deploy this on a live system.
+
+After all project dependencies have been installed you can run npm run start to get a live site version of the punk API project running.
+
+## 🎈 Usage <a name="usage"></a>
+
+Using the site
+
+### Landing Page 
+
+<img src="./src/assets/screenshots/landingpage.png"/>
+
+
+### Main page
+
+<img src="./src/assets/screenshots/mainpage.png"/>
+
+### locations page
+
+<img src="./src/assets/screenshots/locationspage.png"/>
+
+
+#### Single location page
+
+<img src="./src/assets/screenshots/setLocationPage.png"/>
+
+#### Add Character Page
+
+<img src="./src/assets/screenshots/newCharacterPage.png"/>
+
+#### Single Character Information Page
+<img src="./src/assets/screenshots/npcPage.png"/>
+
+
+### Single beer information page
+
+<img src="./src/assets/images/Beer info.png"/>
+
+
+
+
+
+### `Features of note`
+
+## 🚀 Future Scope <a name = "future_scope"></a>
+
+The road-map for future features, fixes and developments are as follows:
+ <ul>
+    <li>Add IBU to the sort by and filter options</li>
+    <li>Add a dropdown card list of beers coming from the search box onFocus that would contain all available beer selections and narrow that list down based on user input</li>
+    <li>Add the ability to search based on food parings and year brewed</li>
+    <li>Add more navigation features. i.e. a button on the single beer page that would take you back home. And an 'X' button to close the sort by options window.</li>
+  </ul>
+
+## Available Scripts <a name="available_scripts"></a>
+
+In the project directory, you can run: 
 
 ### `npm start`
 
@@ -39,32 +125,7 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## ✍️ Authors <a name = "authors"></a>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [@Connz17](https://github.com/Connz17) 
