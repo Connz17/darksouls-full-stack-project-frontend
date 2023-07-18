@@ -75,6 +75,9 @@ Using the site
 
 The road-map for future features, fixes and developments are as follows:
  <ul>
+    <li>Implement Axios</li>
+    <li>Store database on the cloud</li>
+    <li>Add a notes part to single character page</li>
     <li>...</li>
     
   </ul>
